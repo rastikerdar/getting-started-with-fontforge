@@ -1,0 +1,316 @@
+<html class="style-light">
+  <head>
+    <title>شروع با فونت‌فورج FontForge</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="description" content="آموزش آشنایی با برنامه فونت‌فورج">   
+    <meta name="keywords" content="فونت,فارسی,فونت فورج,راهنما,آموزش,font,fontforge">
+    <style>
+      @font-face {
+        font-family: Vazir;
+        src: url('http://rastikerdar.github.io/vazir-font/Vazir.eot');
+        src: url('http://rastikerdar.github.io/vazir-font/Vazir.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/vazir-font/Vazir.woff') format('woff'),
+             url('http://rastikerdar.github.io/vazir-font/Vazir.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Vazir;
+        src: url('http://rastikerdar.github.io/vazir-font/Vazir-Bold.eot');
+        src: url('http://rastikerdar.github.io/vazir-font/Vazir-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/vazir-font/Vazir-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/vazir-font/Vazir-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+
+      @font-face {
+        font-family: Parastoo;
+        src: url('http://rastikerdar.github.io/parastoo-font/Parastoo.eot');
+        src: url('http://rastikerdar.github.io/parastoo-font/Parastoo.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/parastoo-font/Parastoo.woff') format('woff'),
+             url('http://rastikerdar.github.io/parastoo-font/Parastoo.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Parastoo;
+        src: url('http://rastikerdar.github.io/parastoo-font/Parastoo-Bold.eot');
+        src: url('http://rastikerdar.github.io/parastoo-font/Parastoo-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/parastoo-font/Parastoo-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/parastoo-font/Parastoo-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+      
+      @font-face {
+        font-family: Samim;
+        src: url('http://rastikerdar.github.io/samim-font/Samim.eot');
+        src: url('http://rastikerdar.github.io/samim-font/Samim.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/samim-font/Samim.woff') format('woff'),
+             url('http://rastikerdar.github.io/samim-font/Samim.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Samim;
+        src: url('http://rastikerdar.github.io/samim-font/Samim-Bold.eot');
+        src: url('http://rastikerdar.github.io/samim-font/Samim-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/samim-font/Samim-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/samim-font/Samim-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+      
+      @font-face {
+        font-family: Shabnam;
+        src: url('http://rastikerdar.github.io/shabnam-font/Shabnam.eot');
+        src: url('http://rastikerdar.github.io/shabnam-font/Shabnam.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/shabnam-font/Shabnam.woff') format('woff'),
+             url('http://rastikerdar.github.io/v-font/Shabnam.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Shabnam;
+        src: url('http://rastikerdar.github.io/shabnam-font/Shabnam-Bold.eot');
+        src: url('http://rastikerdar.github.io/shabnam-font/Shabnam-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/shabnam-font/Shabnam-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/shabnam-font/Shabnam-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+
+      @font-face {
+        font-family: Tanha;
+        src: url('http://rastikerdar.github.io/tanha-font/Tanha.eot');
+        src: url('http://rastikerdar.github.io/tanha-font/Tanha.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/tanha-font/Tanha.woff') format('woff'),
+             url('http://rastikerdar.github.io/tanha-font/Tanha.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Tanha;
+        src: url('http://rastikerdar.github.io/tanha-font/Tanha-Bold.eot');
+        src: url('http://rastikerdar.github.io/tanha-font/Tanha-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/tanha-font/Tanha-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/tanha-font/Tanha-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        color: #000;
+        direction: rtl;
+        line-height: 1.7;
+        font-family: vazir, Tahoma,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
+        font-size: 14px;
+      }
+      
+      li { margin-right: 20px; }
+      
+      p { margin-bottom: 10px; }
+      
+      a {
+        text-decoration: none;
+        color: #007fba;
+      }
+      
+      hr {
+        border: none;
+        background-color: #ccc;
+        height: 1px;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 5px;
+        color: #414F64;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      h2 {
+        border-bottom: 1px solid #aaa;
+        margin-top: 30px;
+      }
+      
+      img {
+        max-width: 100%;
+      }
+      
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: left;
+        background-color: #000;
+        color: #fff;
+      }
+
+      nav select {
+        font-family: vazir;
+      }
+            
+      nav a { 
+        color: #83C7CB;
+        margin: 0 10px;
+      }
+            
+      header, article.text, footer {
+        margin: auto;
+        padding: 50px 20%;
+      }
+
+      header {
+        text-align: center;
+        background-color: #eee;
+        color: #444;
+      }
+
+      header .info {
+        color: #888;
+        font-size: 12px;
+      }
+      
+      .font-parastoo {
+        font-family: parastoo, serif;
+      }
+
+      .font-samim {
+        font-family: samim, tahoma, "DejaVu Sans", freesans,sans-serif;;
+      }
+
+      .font-shabnam {
+        font-family: shabnam, tahoma, "DejaVu Sans", freesans,sans-serif;;
+      }
+
+      .font-tanha {
+        font-family: tanha, tahoma, "DejaVu Sans", freesans,sans-serif;;
+      }
+
+      .font-vazir {
+        font-family: vazir, tahoma, "DejaVu Sans", freesans,sans-serif;
+      }      
+            
+      .style-dark body {
+        background-color: #444;
+        color: #ddd;
+      }
+
+      .style-dark .text a {
+        color: #D7DD77;
+      }
+
+      .style-dark h1,
+      .style-dark h2,
+      .style-dark h3,
+      .style-dark h4,
+      .style-dark h5,
+      .style-dark h6 {
+        color: #FFA500;
+      }
+
+            
+      .style-grey body {
+        background-color: #E0E0E0;
+        color: #000;
+      }
+
+      .style-grey .text a {
+        color: #0063FF;
+      }
+
+      .style-grey h1,
+      .style-grey h2,
+      .style-grey h3,
+      .style-grey h4,
+      .style-grey h5,
+      .style-grey h6 {
+        color: #33487E;
+      }
+
+      .size-12 { font-size: 12px }
+      .size-13 { font-size: 13px }
+      .size-14 { font-size: 14px }
+      .size-15 { font-size: 15px }
+      .size-16 { font-size: 16px }
+      .size-17 { font-size: 17px }
+      
+      @media all and (max-width: 700px){
+        header, article.text, footer {
+          padding: 30px 10px;
+        }
+      }
+
+    </style>
+  </head>
+  
+  <body>
+      <nav>
+        <a href="#" onclick="window.scrollTo(0,0);"> ^ابتدا</a>
+        <select autocomplete=off id="select-font" onchange="changeFont(this.value)">
+          <option value="" selected disabled>نوع قلم</option>
+          <option value="vazir">وزیر</option>
+          <option value="samim">صمیم</option>
+          <option value="shabnam">شبنم</option>
+          <option value="parastoo">پرستو</option>
+          <option value="tanha">تنها</option>
+        </select>
+        <select autocomplete=off id="select-size" onchange="changeSize(this.value)">
+          <option value="" selected disabled>سایز متن</option>
+          <option value="12">12px</option>
+          <option value="13">13px</option>
+          <option value="14">14px</option>
+          <option value="15">15px</option>
+          <option value="16">16px</option>
+          <option value="17">17px</option>
+        </select>
+        <select autocomplete=off id="select-style" onchange="changeStyle(this.value)">
+          <option value="" selected disabled>استایل صفحه</option>
+          <option value="dark">تاریک</option>
+          <option value="grey">خاکستری</option>
+          <option value="light">روشن</option>
+        </select>
+      </nav>
+<!--
+    <header>
+      <h1></h1>
+      <div class="info"></div>
+    </header>
+-->
+
+    <article class="text font-vazir size-14">
+      {{md_converted}}
+    </article>
+        
+<!--
+    <footer></footer>
+-->
+    
+    <script>
+      "use strict";
+            
+      function changeFont(name) {
+        var text = document.getElementsByClassName('text')[0];
+        text.className = text.className.replace(/(?:^|\s)font-[a-z]*(?!\S)/g , ' font-' + name);
+      }
+      
+      function changeSize(size) {
+        var text = document.getElementsByClassName('text')[0];
+        text.className = text.className.replace(/(?:^|\s)size-[0-9]*(?!\S)/g , ' size-' + size);
+      }
+      
+      function changeStyle(name) {
+        if (!name) return;
+        var html = document.getElementsByTagName('html')[0];
+        html.className = html.className.replace(/(?:^|\s)style-[a-z]*(?!\S)/g , ' style-' + name);
+      }
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,526 @@
+<html class="style-light">
+  <head>
+    <title>شروع با فونت‌فورج FontForge</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="description" content="آموزش آشنایی با برنامه فونت‌فورج">   
+    <meta name="keywords" content="فونت,فارسی,فونت فورج,راهنما,آموزش,font,fontforge">
+    <style>
+      @font-face {
+        font-family: Vazir;
+        src: url('http://rastikerdar.github.io/vazir-font/Vazir.eot');
+        src: url('http://rastikerdar.github.io/vazir-font/Vazir.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/vazir-font/Vazir.woff') format('woff'),
+             url('http://rastikerdar.github.io/vazir-font/Vazir.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Vazir;
+        src: url('http://rastikerdar.github.io/vazir-font/Vazir-Bold.eot');
+        src: url('http://rastikerdar.github.io/vazir-font/Vazir-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/vazir-font/Vazir-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/vazir-font/Vazir-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+
+      @font-face {
+        font-family: Parastoo;
+        src: url('http://rastikerdar.github.io/parastoo-font/Parastoo.eot');
+        src: url('http://rastikerdar.github.io/parastoo-font/Parastoo.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/parastoo-font/Parastoo.woff') format('woff'),
+             url('http://rastikerdar.github.io/parastoo-font/Parastoo.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Parastoo;
+        src: url('http://rastikerdar.github.io/parastoo-font/Parastoo-Bold.eot');
+        src: url('http://rastikerdar.github.io/parastoo-font/Parastoo-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/parastoo-font/Parastoo-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/parastoo-font/Parastoo-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+      
+      @font-face {
+        font-family: Samim;
+        src: url('http://rastikerdar.github.io/samim-font/Samim.eot');
+        src: url('http://rastikerdar.github.io/samim-font/Samim.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/samim-font/Samim.woff') format('woff'),
+             url('http://rastikerdar.github.io/samim-font/Samim.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Samim;
+        src: url('http://rastikerdar.github.io/samim-font/Samim-Bold.eot');
+        src: url('http://rastikerdar.github.io/samim-font/Samim-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/samim-font/Samim-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/samim-font/Samim-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+      
+      @font-face {
+        font-family: Shabnam;
+        src: url('http://rastikerdar.github.io/shabnam-font/Shabnam.eot');
+        src: url('http://rastikerdar.github.io/shabnam-font/Shabnam.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/shabnam-font/Shabnam.woff') format('woff'),
+             url('http://rastikerdar.github.io/v-font/Shabnam.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Shabnam;
+        src: url('http://rastikerdar.github.io/shabnam-font/Shabnam-Bold.eot');
+        src: url('http://rastikerdar.github.io/shabnam-font/Shabnam-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/shabnam-font/Shabnam-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/shabnam-font/Shabnam-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+
+      @font-face {
+        font-family: Tanha;
+        src: url('http://rastikerdar.github.io/tanha-font/Tanha.eot');
+        src: url('http://rastikerdar.github.io/tanha-font/Tanha.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/tanha-font/Tanha.woff') format('woff'),
+             url('http://rastikerdar.github.io/tanha-font/Tanha.ttf') format('truetype');
+        font-weight: normal;
+      }    
+
+      @font-face {
+        font-family: Tanha;
+        src: url('http://rastikerdar.github.io/tanha-font/Tanha-Bold.eot');
+        src: url('http://rastikerdar.github.io/tanha-font/Tanha-Bold.eot#iefix') format('embedded-opentype'),
+             url('http://rastikerdar.github.io/tanha-font/Tanha-Bold.woff') format('woff'),
+             url('http://rastikerdar.github.io/tanha-font/Tanha-Bold.ttf') format('truetype');
+        font-weight: bold;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        color: #000;
+        direction: rtl;
+        line-height: 1.7;
+        font-family: vazir, Tahoma,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
+        font-size: 14px;
+      }
+      
+      li { margin-right: 20px; }
+      
+      p { margin-bottom: 10px; }
+      
+      a {
+        text-decoration: none;
+        color: #007fba;
+      }
+      
+      hr {
+        border: none;
+        background-color: #ccc;
+        height: 1px;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 5px;
+        color: #414F64;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      h2 {
+        border-bottom: 1px solid #aaa;
+        margin-top: 30px;
+      }
+      
+      img {
+        max-width: 100%;
+      }
+      
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: left;
+        background-color: #000;
+        color: #fff;
+      }
+
+      nav select {
+        font-family: vazir;
+      }
+            
+      nav a { 
+        color: #83C7CB;
+        margin: 0 10px;
+      }
+            
+      header, article.text, footer {
+        margin: auto;
+        padding: 50px 20%;
+      }
+
+      header {
+        text-align: center;
+        background-color: #eee;
+        color: #444;
+      }
+
+      header .info {
+        color: #888;
+        font-size: 12px;
+      }
+      
+      .font-parastoo {
+        font-family: parastoo, serif;
+      }
+
+      .font-samim {
+        font-family: samim, tahoma, "DejaVu Sans", freesans,sans-serif;;
+      }
+
+      .font-shabnam {
+        font-family: shabnam, tahoma, "DejaVu Sans", freesans,sans-serif;;
+      }
+
+      .font-tanha {
+        font-family: tanha, tahoma, "DejaVu Sans", freesans,sans-serif;;
+      }
+
+      .font-vazir {
+        font-family: vazir, tahoma, "DejaVu Sans", freesans,sans-serif;
+      }      
+            
+      .style-dark body {
+        background-color: #444;
+        color: #ddd;
+      }
+
+      .style-dark .text a {
+        color: #D7DD77;
+      }
+
+      .style-dark h1,
+      .style-dark h2,
+      .style-dark h3,
+      .style-dark h4,
+      .style-dark h5,
+      .style-dark h6 {
+        color: #FFA500;
+      }
+
+            
+      .style-grey body {
+        background-color: #E0E0E0;
+        color: #000;
+      }
+
+      .style-grey .text a {
+        color: #0063FF;
+      }
+
+      .style-grey h1,
+      .style-grey h2,
+      .style-grey h3,
+      .style-grey h4,
+      .style-grey h5,
+      .style-grey h6 {
+        color: #33487E;
+      }
+
+      .size-12 { font-size: 12px }
+      .size-13 { font-size: 13px }
+      .size-14 { font-size: 14px }
+      .size-15 { font-size: 15px }
+      .size-16 { font-size: 16px }
+      .size-17 { font-size: 17px }
+      
+      @media all and (max-width: 700px){
+        header, article.text, footer {
+          padding: 30px 10px;
+        }
+      }
+
+    </style>
+  </head>
+  
+  <body>
+      <nav>
+        <a href="#" onclick="window.scrollTo(0,0);"> ^ابتدا</a>
+        <select autocomplete=off id="select-font" onchange="changeFont(this.value)">
+          <option value="" selected disabled>نوع قلم</option>
+          <option value="vazir">وزیر</option>
+          <option value="samim">صمیم</option>
+          <option value="shabnam">شبنم</option>
+          <option value="parastoo">پرستو</option>
+          <option value="tanha">تنها</option>
+        </select>
+        <select autocomplete=off id="select-size" onchange="changeSize(this.value)">
+          <option value="" selected disabled>سایز متن</option>
+          <option value="12">12px</option>
+          <option value="13">13px</option>
+          <option value="14">14px</option>
+          <option value="15">15px</option>
+          <option value="16">16px</option>
+          <option value="17">17px</option>
+        </select>
+        <select autocomplete=off id="select-style" onchange="changeStyle(this.value)">
+          <option value="" selected disabled>استایل صفحه</option>
+          <option value="dark">تاریک</option>
+          <option value="grey">خاکستری</option>
+          <option value="light">روشن</option>
+        </select>
+      </nav>
+<!--
+    <header>
+      <h1></h1>
+      <div class="info"></div>
+    </header>
+-->
+
+    <article class="text font-vazir size-14">
+      <h1>شروع با FontForge</h1>
+<p>مقدمه:
+هرگز تردید یا واهمه‌ای به خود راه ندهید. <a href="https://fontforge.github.io">فونت‌فورج</a> آمده است که ساخت و ویرایش قلم را برای شما مثل آب خوردن کند! بلی به همین راحتی! کار با قلم‌ها خیلی ساده‌تر از آن چیزیست که فکر می‌کنید. مهم‌ترین یا سخت‌ترین قسمت ماجرا، داشتن ایده برای طراحی است. این که می‌خواهید فونت شما چه شکلی باشد. بقیه‌اش را بسپارید به فونت‌فورج. حتی اگر ایده‌ای هم ندارید کمی که با فونت فورج کار کنید قطعا به موارد یا ایده‌های جالبی خواهید رسید.</p>
+<p>البته اگر می‌خواهید کاملا بر مدار مبانی و اصول طراحی قلم حرکت کنید باید ابتدا شاید چند(ین) سال دوره‌های مورد نیاز تحصیل دانش طراحی قلم را بگذارنید (چرا که طراحی قلم از صفر کاری تخصصی، پیچیده و زمانبر می‌باشد و پیاده‌سازی در فونت‌فورج فقط بخشی از ماجراست) اما خب حتی در آن صورت نیز بد نیست این صفحه را بخوانید. مطالعه این مطلب شاید بتواند نقطه آغاز شما برای ورود به دنیای فونت‌ها باشد و با آن قادر شوید قلم دلخواه خود را بسازید.</p>
+<p>نکته: برای اینکه عملا بتوانید فونتی بسازید نیاز است این صفحه را کامل بخوانید. به ویژه قسمت پرسش و پاسخ.</p>
+<p>آماده‌اید؟ اگر آری پس در ادامه چند دقیقه‌ای را با فونت‌فورج سپری کنیم.</p>
+<p><a href="https://fontforge.github.io">فونت‌فورج</a> را که نصب کردید به سراغ یکی از صفحات فونت های آزاد رفته و پس از دریافت فایل سورس، آن را باز کنید. برای شروع شاید <a href="https://github.com/rastikerdar/vazir-font/raw/master/source/Vazir.sfd">قلم وزیر</a> بد نباشد :) </p>
+<h2>نمای نخست</h2>
+<p><a href="images/main-window.png"><img alt="صفحه اصلی فونت‌فورج" src="images/main-window.png" title="صفحه اصلی فونت‌فورج"></a></p>
+<p>اجازه دهید مروری بر موضوعات کلی داشته باشیم. به طور خیلی ساده و کلی زمانی که کامپیوتر می خواهد چیزی را نمایش دهد ابتدا کد آن را بررسی می‌کند که آیا در این جدولی که مشاهده می کنید وجود دارد (و البته خالی نمی باشد) یا خیر. اگر خیر به سراغ جداول فونت های دیگری می رود. آرایش این جدول بر اساس نوع انکدینگی است که در منوی Encoding انتخاب کرده‌ایم:</p>
+<p><a href="images/encoding.png"><img alt="اندکدینگ" src="images/encoding.png" title="اندکدینگ"></a></p>
+<p>در جدول اصلی هر کدام از این خانه ها را گلیف (Glyph) می‌نامیم. خانه هایی که به صورت X هستند عملا بدون استفاده می‌باشند و در فونت انکد نمی‌شوند یا به عبارتی در هنگام نمایش مورد استفاده قرار نمی‌گیرند. اگر هر کدام را باز کنید و تغییراتی درونش اعمال نمایید به طوری که از حالت X خارج شود حتما در هنگام نمایش کد مربوط به آن، مورد استفاده قرار خواهد گرفت. خواه خالی باشد خواه پر. اگر خواستید دوباره به حالت X برگردانید کافیست پس از انتخاب آن در جدول اصلی، از منوی Encoding گزینه Detach &amp; Remove Glyphs را انتخاب نمایید تا کاملا از فونت حذف شود.</p>
+<p><a href="images/remove-glyph.png"><img alt="اندکدینگ" src="images/remove-glyph.png" title="اندکدینگ"></a></p>
+<p>از آنجایی که پیدا کردن هر گلیف در این جدول بسیار بزرگ کمی مشکل است، از منوی Encoding گزینه Compact را بر می‌گزینیم.</p>
+<p><a href="images/compact.png"><img alt="حالت فشرده" src="images/compact.png" title="حالت فشرده نمایش گلیف‌ها"></a></p>
+<p>الان خیلی بهتر شد. جدولمان حسابی جمع و جور شد. برای شروع به سراغ یکی از گلیف ها یعنی دال با دو بار کلیک می رویم.</p>
+<p><a href="images/dal.png"><img alt="گلیف دال" src="images/dal.png" title="گلیف دال"></a></p>
+<p>چند نکته:</p>
+<ul>
+<li>با کلیدهای ctrl+D می‌توانید Point ها یا همان نقاط که از این به بعد آن‌ها را گره‌ها می نامیم را ببینید یا پنهان کنید. این نامگذاری به دلیل اینکه بسیاری حروف فارسی دارای نقطه هستند انجام می‌دهیم.</li>
+</ul>
+<p><a href="images/dal-without-points.png"><img alt="گلیف دال بدون گره‌ها" src="images/dal-without-points.png" title="دال بدون گره‌ها"></a></p>
+<ul>
+<li>با انتخاب منوی View-&gt;Show-&gt;Fill می‌توانید گلیف را به صورت توپر یا توخالی ببینید.</li>
+</ul>
+<p><a href="images/dal-filled.png"><img alt="گلیف دال توپر" src="images/dal-filled.png" title="دال بدون توپر"></a></p>
+<ul>
+<li>برای دیدن پیش نمایش گلیف مشابه نمایش در حالت نهایی کلیدهای ctrl+` یا منوی View-&gt;Show-&gt;Preview را انتخاب نمایید.</li>
+</ul>
+<p><a href="images/dal-preview.png"><img alt="گلیف دال پیش‌نمایش" src="images/dal-preview.png" title="دال پیش‌نمایش"></a></p>
+<ul>
+<li>برای بزرگ و کوچک‌نمایی نیز کلیدهای ctrl+= یا از آن بهتر ctrl+غلتک موشی استفاده نمایید. (mouse=موشی)</li>
+<li>برای بالا و پایین حرکت دادن صفحه فقط غلتک موشی.</li>
+<li>
+<p>برای چپ و راست بردن صفحه نیز shift+غلتک موشی.</p>
+</li>
+<li>
+<p>برای Undo یعنی بازگشت با به حالت قبل از آخرین تغییر در گلیف و یا Redo یعنی رفتن به حالت پس از تغییر بعدی به ترتیب دکمه های ctrl+Z و ctrl+Y را هرگز فراموش نکنید.</p>
+</li>
+</ul>
+<p>این چند مورد ساده بالا را دائما و به صورت غیر قابل شمارش در حال انجام دادن خواهید بود پس دانستن آنها خیلی کمکتان می‌کند.</p>
+<p><strong>سوال</strong>: چرا برخی گلیف‌ها را نمی توان ویرایش کرد یا برخی شکل‌ها گره‌ای برای ویرایش ندارند؟
+برای پاسخ به بخش پرسش و پاسخ در انتهای مطلب مراجعه نمایید.</p>
+<h2>متریک‌ها</h2>
+<p>در تصویر زیر پنج خط اصلی را مشاهده می‌کنید که در هر فونتی دو خط افقی بالا Ascender یا فراز و پایین Descender یا فرود نسبت به خط پایه یا Baseline بیانگر اندازه اصلی ارتفاع کل فونت یا گلیف‌ها با نام Em Size می‌باشد. در واقع این اندازه مربع یا Em Square است اما خب برای دانستن اصل ماجرا به کتب یا مقالات تخصصی آن مراجعه نمایید. این اندازه به واحد تعریف می‌شود که در زمان نمایش بسته به نوع و اندازه واحد مورد استفاده، تبدیل می‌شود. فرض کنید این اندازه ۱۰۰۰ واحد باشد و اندازه ارتفاع گلیف دال شما نیز ۶۰۰ واحد. حال اگر بخواهید قلم را در اندازه ۱۰ پیکسل نمایش دهید ارتفاع گلیف الف ۶ پیکسل خواهد بود. در قلم‌های truetype یا همین قلم وزیر این اندازه بر اساس توانی از دو در نظر گرفته می‌شود. در فونت وزیر اندازه Em دقیقا ۲۰۴۸ واحد و ارتفاع دال نیز حدودا ۹۰۰ و الف ۱۴۰۰ واحد می‌باشد. </p>
+<p><a href="images/metrics.png"><img alt="متریک" src="images/metrics.png" title="متریک"></a></p>
+<p>نکته: در فونت وزیر ارتفاع هر کدام از گلیف‌ها صرفا بر اساس آنچه که به چشم خوانا و راحت آمد انتخاب شده‌اند و فرمول خاصی ندارد! :D</p>
+<p>خط وسط یا پایه یا همان Baseline همانطور که از نامش پیداست خط پایه تمام گلیف‌هاست که هر کدام از گلیف ها به تناسب شکلشان در بالا یا پایین یا هر دو طرف قرار می‌گیرند.</p>
+<p>تعیین اندازه Em Size در منوی Element-&gt;Font Info در برگه General صورت می‌گیرد. Em Size جمع Ascender و Descender می‌باشد.</p>
+<p><a href="images/font-info-menu.png"><img alt="منوی اطلاعات فونت" src="images/font-info-menu.png" title="منوی اطلاعات فونت"></a></p>
+<p><a href="images/font-info-general.png"><img alt="اطلاعات کلی فونت" src="images/font-info-general.png" title="اطلاعات کلی فونت"></a></p>
+<p>قاعدتا اگر ارتفاع گلیف‌های شما از خط فراز یا فرود تجاوز کند آن قسمت نباید نمایش یابد. اما در برخی قلم‌ها می‌بینید گلیف ها از این محدوده خارج شده‌اند و بدون مشکل رندر می‌شوند. دلیلش تعیین پارامترهای دیگری در فونت تحت برگه OS/2-&gt;Metrics برای نحوه نمایش است که بالاتر از مقدار Em Size تعریف می‌گردند. خارج از این محدوده چیزی نمایش نمی‌یابد.</p>
+<p><a href="images/font-metrics.png"><img alt="اطلاعات متریک فونت" src="images/font-metrics.png" title="اطلاعات متریک فونت"></a></p>
+<p>دو خط عمودی نیز طول گلیف را مشخص می‌کنند. خط سمت راست، هم از طریق موشی و هم منوی Metrics-&gt;Set Width یا Metrics-&gt;RBearing قابل تغییر است. خط چپ نیز هم از طریق موشی هم از منوی Metrics-&gt;LBearing. توجه داشته باشید در صورت تغییر با موشی گلیف های وابسته به این گلیف که در ادامه توضیح خواهیم داد نیز تغییر می‌کنند. بهترین حالت انتخاب با موشی و چپ و راست نمودن با کلید های جهت دار &gt; و &lt; کیبورد است تا از تغییرات ناخواسته جلوگیری شود.</p>
+<p>همیشه منوی View-&gt;Show-&gt;Side Bearings را فعال نگه دارید تا فاصله گلیف از چپ و راست نمایش یابد.</p>
+<p><a href="images/sides.png"><img alt="کناره‌ها" src="images/sides.png" title="کناره‌ها"></a></p>
+<p>رعایت این فاصله در همه گلیف ها باعث خوانایی و نظم در نوشته‌ها می شود. انتخاب اندازه مناسب به شاخص‌های گوناگونی بستگی دارد که در فونت وزیر سعی گردیده نزدیک به ۹۰ واحد بماند. اگر شکل شما از این دو خط تجاوز کند در صورتی که فضای کافی برای نمایش آن وجود داشته باشد بدون مشکل نمایش می‌یابد. توصیه می‌شود چنین نشود مگر در یک حالت خاص رایج که توضیح آن در بخش پرسش و پاسخ در انتهای مطلب آمده است.</p>
+<p>خطوط دیگری نیز می‌تواند در صفحه وجود داشته باشد که با کلیک موشی در خط کش افقی یا عمودی کنار صفحه و کشیدن در داخل صفحه می‌توانید به هر تعداد که خواستید خطوط راهنما یا کمکی یا همان Guide line بسازید. برای حذف این خطوط در قسمت پایین جعبه ابزار سمت چپ صفحه بر روی خود کلمه Guide کلیک کنید سپس با انتخاب هر کدام از خطوط می‌توانید آن را حذف کنید. و برای بازگشتن به حالت عادی کلمه Fore را کلیک کنید.</p>
+<p><a href="images/guide-lines.png"><img alt="خطوط کمکی" src="images/guide-lines.png" title="خطوط کمکی"></a></p>
+<p>نکته: گلیف هایتان را طوری بسازید که تا حد امکان فضای ما بین خط فراز و خط پایه را پر کند. اینگونه با گلیف ها و فونت های لاتین نیز هماهنگ خواهد بود. برای مثال ارتفاع الف را مساوی یا نزدیک به خط فراز در نظر بگیرید تا در ادامه طراحی سایر گلیف‌ها بتوان به اندازه ارتفاع الف استناد کرد.</p>
+<p>دو ستاره موجود در تصویر نامشان Anchor است و مکان قرار گیری اعراب هستند. در فونت وزیر anchor-10 برای نمایش اعراب بالا مثل فتحه و ضمه و تنوین و ... و anchor-7 نیز جهت اعراب پایین مانند کسره. میتوانید در جای دلخواه قرار دهید. </p>
+<p>اکنون به مقوله جذاب ابزارهای طراحی می پردازیم. بسیار ساده است. سر و کار ما در هنگام طراحی تنها با گره‌ها می‌باشد. در واقع این گره‌های متصل به هم می‌باشند که شکل ما را می‌سازند.</p>
+<h2>گره‌ها</h2>
+<p>چهار نوع گره داریم:</p>
+<h3>گره منحنی یا Curve point</h3>
+<p>گره منحنی برای تعیین نحوه اتصالش با دیگر گره‌ها دو دستگیره دارد. این دو دستگیره به هم متصل می‌باشند و به بیانی دیگر نمی‌توانند از یکدیگر مستقل عمل کنند که دلیل آن ایجاد یک منحنی صاف در دو طرف می‌باشد.</p>
+<p><a href="images/tools-curve-point.png"><img alt="گره منحنی" src="images/tools-curve-point.png" title="گره منحنی"></a></p>
+<h3>گره محنی اچ وی یا افقی و عمودی یا H/V Curve point</h3>
+<p>این نوع گره منحنی تاکیدش بر چسبیدن به محور افقی و عمودی می‌باشد که در هنگام طراحی اشکال صحیح و اصولی به کمک می آید. توضیحات آن در ادامه مطلب خواهد آمد.</p>
+<p><a href="images/tools-HV-point.png"><img alt="گره منحنی اچ وی" src="images/tools-HV-point.png" title="گره منحنی اچ وی"></a></p>
+<h3>گره گوشه یا Corner point</h3>
+<p>همانطور که از نامش پیداست گره‌هایی هستند که در گوشه قرار می‌گیرند. این نوع گره می‌تواند از هیچ یا یک و یا ۲ دستگیره برخوردار باشد که کاملا مستقل از یکدیگر عمل می‌کنند. به هر کدام از دستگیره ها که نیازی نداشتید یا عبارتی دنبال خط صاف بودید دستگیره را به داخل خود گره بکشید.</p>
+<p><a href="images/tools-square-point.png"><img alt="گره گوشه" src="images/tools-square-point.png" title="گره گوشه"></a></p>
+<p><a href="images/tools_corner_point_2.png"><img alt="گره گوشه" src="images/tools_corner_point_2.png" title="گره گوشه"></a></p>
+<p><a href="images/tools-corner-point-3.png"><img alt="گره گوشه" src="images/tools-corner-point-3.png" title="گره گوشه"></a></p>
+<h4>گره مماس یا Tangent point</h4>
+<p>برای داشتن یک منحنی کاملا مماس مطلوب (به صورت تضمین شده) در امتداد یک خط صاف حتما از این نوع گره استفاده نمایید. این گره فقط یک دستگیره باید داشته باشد (اگر دو تا داشت بسته به جهتی که مد نظرتان است یک دستگیره را به داخل خود فلش بکشید).</p>
+<p><a href="images/tools-tangent-point.png"><img alt="گره مماس" src="images/tools-tangent-point.png" title="گره مماس"></a></p>
+<p><a href="images/tangent-point-vazir.png"><img alt="گره مماس" src="images/tangent-point-vazir.png" title="گره مماس"></a></p>
+<p>برای مثال در قلم شبنم به کرات از این نوع گره استفاده شده است.</p>
+<p><a href="images/tangent-point-shabnam.png"><img alt="گره مماس" src="images/tangent-point-shabnam.png" title="گره مماس"></a></p>
+<h3>روش صحیح طراحی:</h3>
+<p>برای داشتن منحنی‌های مناسب به طوری که هم کمترین تعداد گره را داشته باشیم و هم عمل Rasterization یا همان تبدیل این گره‌ها و خطوط برداری یا Vector به حالت گرافیک پیکسلی که در صفحات نمایش می‌بینیم به سهولت انجام پذیرد بهتر است تلاش کنیم که گره‌های منحنی کاملا در نقاط قوس یا انتهای انحنا قرار گیرند. این نقاط را خود فونت فورج به شکل یک دایره که با علامت + پر شده نشان می‌دهد. به این نقاط extrema می‌گویند. در ادامه توضیح خواهیم داد که چگونه این نقاط را پر کنیم.</p>
+<p><a href="images/bezier_sample.png"><img alt="طراحی صحیح" src="images/bezier_sample.png" title="طراحی صحیح"></a></p>
+<p><a href="images/right-design.png"><img alt="طراحی صحیح" src="images/right-design.png" title="طراحی صحیح"></a></p>
+<h2>کار با گره‌ها</h2>
+<p>در جعبه ابزار این چهار نوع گره را مشاهده می‌کنید. هر گاه که قصد داشتید گره‌ای را بر روی یک خط ایجاد کنید کافیست یکی از این چهار نوع را انتخاب نموده و در نقطه مورد نظر کلیک کنید. برای خروج از حالت ایجاد گره و بازگشتن به حالت انتخاب گره کلید V (وی انگلیسی) را فشار دهید یا دکمه موشی در جعبه ابزار را انتخاب کنید.</p>
+<p><a href="images/toolbox-points.png"><img alt="دکمه‌های گره‌ها" src="images/toolbox-points.png" title="دکمه‌های گره‌ها"></a></p>
+<p>برای تغییر حالت هر گره، پس از گزینش آن، از منوی Point و یا با کلیک راست بر روی آن یکی از چهار حالت یا چهار گزینه نخست را انتخاب کنید.</p>
+<p><a href="images/point-right-click-menu.png"><img alt="منوی گره" src="images/point-right-click-menu.png" title="منوی گره"></a></p>
+<p>برای ادغام گره در خط یا به نوعی محو (حذف ادغامی) آن منوی Edit-&gt;Merge یا کلیدهای ctrl+M و یا کلیک راست گزینه Merge را انتخاب نمایید.</p>
+<p><a href="images/merge-point-before.png"><img alt="ادغام گره" src="images/merge-point-before.png" title="ادغام گره"></a></p>
+<p><a href="images/merge-point-after.png"><img alt="ادغام گره" src="images/merge-point-after.png" title="ادغام گره"></a></p>
+<p>برای ایجاد خط صاف یا منحنی بین دو گره، پس از انتخاب هر دوی آنها، منوی Point-&gt;Make Line یا از منوی کلیک راست انتخاب نمایید.</p>
+<p><a href="images/make-line-before.png"><img alt="ایجاد خط" src="images/make-line-before.png" title="ایجاد خط"></a></p>
+<p><a href="images/make-line-after.png"><img alt="ایجاد خط" src="images/make-line-after.png" title="ایجاد خط"></a></p>
+<p>برای ایجاد منحنی بین دو گره گوشه (corner) با خط صاف می توانید دکمه قلم یا Pen یا کلید P را فشار دهید. سپس در وسط خط کلیک کرده بکشید. یک گره منحنی با یک دستگیره ایجاد می‌شود. </p>
+<p><a href="images/pen.png"><img alt="قلم" src="images/pen.png" title="قلم"></a></p>
+<p>در صورتی که به هر دو دستگیره نیاز دارید با کلیک راست بر روی آن و انتخاب گزینه Get Info پنجره ای نمایش می‌یابد که در واقع تمامی مشخصات گره در آن گنجانده شده است. گزینه Interpolated و سپس OK را بزنید. در این پنجره همچنین به راحتی می توانید مختصات دقیق گره را نیز تعیین کنید.</p>
+<p><a href="images/get-info-menu.png"><img alt="منو اطلاعات گره" src="images/get-info-menu.png" title="منو اطلاعات گره"></a></p>
+<p><a href="images/get-info.png"><img alt="اطلاعات گره" src="images/get-info.png" title="اطلاعات گره"></a></p>
+<h3>نقاط Extrema و حذف گره‌های اضافی</h3>
+<p>همانطور که گفتیم نقاط extrema مکان قوس یا انتهای انحنا می‌باشند که بهتر است گره‌های ما از نوع منحنی H/V در آنجا قرار گیرند. برای اضافه کردن این نوع گره‌ها کلید ctrl+shift+X یا منوی Element-&gt;Add Extrma را انتخاب کنیم.</p>
+<p><a href="images/extrema.png"><img alt="نقاط قوس" src="images/extrema.png" title="نقاط قوس"></a></p>
+<p>همچنین برای حذف گره‌های اضافی یا به نوعی ساده سازی و تمیز کاری گلیف، کلید ctrl+shift+M یا منوی Element-&gt;Simplify-&gt;Simplify را انتخاب نمایید.</p>
+<h3>عملیات تبدیلی-حرکتی</h3>
+<p>جهت انجام عملیات تبدیلی از جمله چهار عمل اصلی حرکت در جهت افقی یا عمودی (Move)، چرخش (rotate)، برعکس نمودن (flip)، تغییر اندازه مقیاسی جهت کوچکتر یا بزرگتر نمودن (Scale) بر روی یک یا چند گره و یا کل گلیف دو راه پیش رو داریم:</p>
+<ul>
+<li>دکمه‌های موجود در جعبه ابزار</li>
+</ul>
+<p><a href="images/transform-tools.png"><img alt="دکمه های تبدیلی" src="images/transform-tools.png" title="دکمه های تبدیلی"></a></p>
+<p><img alt="تغییر سایز" src="images/toolsscale.png" title="تغییر سایز"> scale تغییر اندازه</p>
+<p>بعد از انتخاب گره‌های مورد نظر و سپس انتخاب این دکمه، کافیست موشی را به هر جایی که می‌خواهید تغییر اندازه انجام شود برده و بکشید. برای مثال اگر می‌خواهید گردی حرف واو از چپ کشیده‌تر شود موشی را به سمت راست گردی برده و به چپ بکشید. اگر می‌خواهد از هر دو جهت باشد در وسط قرار داده و بکشید. اگر می‌خواهید یکسان و در چهار جهت به یک اندازه بزرگ یا کوچک گردد همزمان کلید shift را نیز نگه دارید.</p>
+<p><img alt="تغییر سایز در یک جهت" src="images/scale-from-side.png" title="تغییر سایز در یک جهت"></p>
+<p><img alt="چرخش" src="images/toolsrotate.png" title="چرخش"> rotate چرخش</p>
+<p>برای چرخش نیز در هر قسمت که نگه داشته‌اید و بکشید چرخش از آنجا صورت می‌گیرد.</p>
+<p><img alt="برعکس کردن" src="images/transformfliphor.png" title="برعکس کردن"> flip برعکس نمودن برای آیینه کردن در جهت افقی یا عمودی.</p>
+<ul>
+<li>یک راه دیگر انتخاب از طریق ctrl+\ یا منوی Transformations-&gt;Transform است.</li>
+</ul>
+<p><a href="images/transforms.png"><img alt="پنجره عملیات تبدیلی-حرکتی" src="images/transforms.png" title="پنجره عملیات تبدیلی-حرکتی"></a></p>
+<p>مزیت این روش امکان اعمال آن بر روی هر تعداد گلیف همزمان و همچنین امکان تعیین دقیق از طریق وارد نمودن اعداد مورد نظر می‌باشد. این ابزار به شما کمک فراوانی می‌کند و به دفعات از آن استفاده می‌کنید. برای مثال وقتی می‌خواهید گره یا گره ها یا کل گلیف را به مقدار ۶۵ واحد به چپ جابه‌جا کنید کافیست مقدار x را -۶۵ تنظیم کنید. منفی در جهت چپ است.</p>
+<p>برای تغییر اندازه شکل در هر دو جهت به نسبت مساوی، گزینه Scale Uniformly یا تغییر اندازه یکسان را انتخاب نمایید. هر عددی بالای ۱۰۰ آن را بزرگتر و پایین ۱۰۰ آن را کوچکتر می‌کند.</p>
+<p><a href="images/scale-uniformly.png"><img alt="تغییر اندازه یکسان" src="images/scale-uniformly.png" title="تغییر اندازه یکسان"></a></p>
+<h3>ترکیب و اتصال اشکال</h3>
+<ul>
+<li>فرض کنید شکل واو و حفره آن را جداگانه ساخته‌اید یا از گلیفی دیگر کپی کرده‌اید. چیزی که می‌بینید اینست:</li>
+</ul>
+<p><a href="images/correct-direction-init.png"><img alt="تصحیح جهت" src="images/correct-direction-init.png" title="تصحیح جهت"></a></p>
+<p><a href="images/correct-direction-before.png"><img alt="تصحیح جهت" src="images/correct-direction-before.png" title="تصحیح جهت"></a></p>
+<p>برای ترکیب این دو منوی Element-&gt;Correct Direction را انتخاب کنید.</p>
+<p><a href="images/correct-direction-menu.png"><img alt="تصحیح جهت" src="images/correct-direction-menu.png" title="تصحیح جهت"></a></p>
+<p><a href="images/correct-direction-after.png"><img alt="تصحیح جهت" src="images/correct-direction-after.png" title="تصحیح جهت"></a></p>
+<ul>
+<li>قابلیت دیگر فونت‌فورج امکان ترکیب اشکال به شیوه Include، Exclude و ... از طریق منوی Element-&gt;Overlap می‌باشد. فرض کنید می‌خواهید این دو شکل را با هم ترکیب یا به تعبیری متصل کنید. </li>
+</ul>
+<p><a href="images/overlap-1.png"><img alt="اشتراک شکل‌ها" src="images/overlap-1.png" title="اشتراک شکل‌ها"></a></p>
+<p><a href="images/overlap-2.png"><img alt="اشتراک شکل‌ها" src="images/overlap-2.png" title="اشتراک شکل‌ها"></a></p>
+<p><a href="images/overlap-3.png"><img alt="اشتراک شکل‌ها" src="images/overlap-3.png" title="اشتراک شکل‌ها"></a></p>
+<p><a href="images/overlap-4.png"><img alt="اشتراک شکل‌ها" src="images/overlap-4.png" title="اشتراک شکل‌ها"></a></p>
+<p><a href="images/overlap-5.png"><img alt="اشتراک شکل‌ها" src="images/overlap-5.png" title="اشتراک شکل‌ها"></a></p>
+<p><a href="images/overlap-6.png"><img alt="اشتراک شکل‌ها" src="images/overlap-6.png" title="اشتراک شکل‌ها"></a></p>
+<p>توجه داشته باشید که overlap یا روی هم افتادگی بر روی گره ها صورت می گیرد نه خطوط. اگر گره‌ای نباشد عملی انجام نمی‌شود. به عبارتی آن قسمتی که قرار است حذف شود باید بر روی گره‌ای قرار گرفته باشد.</p>
+<p>نکته دیگر اینکه این عمل فقط بر روی اشکال بسته یعنی اشکالی که همه گره‌های آن به هم متصل باشند انجام می‌گیرد.</p>
+<ul>
+<li>یک روش دیگر آنست که گره‌های مورد نیاز را در ناحیه اتصالی ایجاد نموده و سپس نقاط اتصالی هر دو شکل را به هم وصل کنید.</li>
+</ul>
+<p><a href="images/connect-1.png"><img alt="اتصال اشکال" src="images/connect-1.png" title="اتصال اشکال"></a></p>
+<p><a href="images/connect-2.png"><img alt="اتصال اشکال" src="images/connect-2.png" title="اتصال اشکال"></a></p>
+<p><a href="images/connect-3.png"><img alt="اتصال اشکال" src="images/connect-3.png" title="اتصال اشکال"></a></p>
+<p><a href="images/connect-4.png"><img alt="اتصال اشکال" src="images/connect-4.png" title="اتصال اشکال"></a></p>
+<p><a href="images/connect-5.png"><img alt="اتصال اشکال" src="images/connect-5.png" title="اتصال اشکال"></a></p>
+<h3>گرد کردن گوشه‌ها</h3>
+<p>طبق آنچه در تصویر آمده می‌توانید لبه های تیز را گرد کنید.</p>
+<p><a href="images/round-corner-1.png"><img alt="گرد کردن گوشه" src="images/round-corner-1.png" title="گرد کردن گوشه"></a></p>
+<p><a href="images/round-corner-2.png"><img alt="گرد کردن گوشه" src="images/round-corner-2.png" title="گرد کردن گوشه"></a></p>
+<p><a href="images/round-corner-3.png"><img alt="گرد کردن گوشه" src="images/round-corner-3.png" title="گرد کردن گوشه"></a></p>
+<p><a href="images/round-corner-4.png"><img alt="گرد کردن گوشه" src="images/round-corner-4.png" title="گرد کردن گوشه"></a></p>
+<p><a href="images/round-corner-5.png"><img alt="گرد کردن گوشه" src="images/round-corner-5.png" title="گرد کردن گوشه"></a></p>
+<h2>تغییر ضخامت</h2>
+<p>این مورد از طریق منوی Element-&gt;Style-&gt;Change Weight به راحتی امکان پذیر است. کافیست تنها مقدار Embolden By را تعیین و OK کنید تا گلیف ضخیم تر شود. در نسخه ضخیم Vazir این مقدار ۱۰۲ لحاظ گردید. در صورتی که این مقدار را منفی وارد کنید گلیف باریک‌تر می‌گردد. نتیجه اینکه می‌توانید با همین شیوه وزن‌های مختلف قلم مثل Bold، light، Demi-Bold و ... را نیز بسازید.</p>
+<p><a href="images/change-weight.png"><img alt="تغییر ضخامت" src="images/change-weight.png" title="تغییر ضخامت"></a></p>
+<p>هر چند انجام این عمل برای کل فونت نکات مهمی دارد که توضیحات گام به گام آن بعدا خواهد آمد.</p>
+<p><strong>سوال</strong>: چرا برخی گلیف‌ها با اینکه عدد مذکور را مثبت وارد می‌کنیم باریک‌تر می‌شوند به جای آنکه ضخیم‌تر شوند؟</p>
+<p>به دلیل جهت گلیف می‌باشد. برای اصلاح این ایراد منوی Element-&gt;Clockwise را انتخاب نمایید. مطمئن شوید همه گلیف‌ها حتما Clockwise می‌باشند چرا که در هنگام نمایش فونت نهایی، نرم‌افزار موتور رندر برای نمایش حالت ضخیم آن گلیف را باریک‌تر می‌کند و نه ضخیم‌تر!</p>
+<h2>پرسش و پاسخ</h2>
+<p>خب از مقوله طراحی که بگذریم می‌رسیم به موضوعات و نکات فنی‌.</p>
+<p><strong>سوال</strong>: چرا در بسیاری از گلیف ها عناصر را نمی توان ویرایش کرد مثلا در گلیف ذال امکان ویرایش نقطه یا دال را وجود ندارد؟</p>
+<p><a href="images/reference-1.png"><img alt="ارجاع" src="images/reference-1.png" title="ارجاع"></a></p>
+<p>دلیلش در امکان فوق العاده‌ای در قلم می‌باشد که ما را از انجام تکرار و مکررات و کار بیهوده باز می‌دارد. شما یک بار نقطه فارسی را طراحی کرده و در همه گلیف‌ها از طریق ارجاع به آن استفاده می‌کنید. نتیجه اینکه هر بار نقطه اصلی را تغییر دهید خود به خود در همه گلیف ها اعمال می‌شود. حال همین موضوع را برای گلیف‌های مشابه یکدیگر از جمله ح‌ج‌چ‌خ یا فـ‌قـ یا ب‌پ‌ت‌ث که هم دارای نقطه و هم شکل اصلی یکسان می‌باشند نیز در نظر بگیرید. 
+بنابراین شما یک بار گلیف ح را طراحی کرده و در بقیه حروف مشابه آن از ارجاع به آن استفاده می‌کنید. برای این منظور بعد از طراحی گلیف ح، منوی Edit-&gt;Copy reference یا کلیدهای ctrl+G را برگزینید. سپس در خانه گلیف مقصد منوی Edit-&gt;Paste یا کلیدهای ctrl+V را انتخاب نمایید. برای نقطه هم به همین صورت. به همین سادگی عملا از طراحی یا کپی مجدد بسیاری از گلیف‌های مشابه رهایی می‌یابید.</p>
+<p><a href="images/reference-2.png"><img alt="ارجاع" src="images/reference-2.png" title="ارجاع"></a></p>
+<p>در تصویر زیر گلیف‌های مرجع که سایرین از روی آنها کپی شده‌اند به رنگ آبی انتخاب گشته‌اند.</p>
+<p><a href="images/reference-3.png"><img alt="ارجاع" src="images/reference-3.png" title="ارجاع"></a></p>
+<p><strong>سوال</strong>: چرا برخی از گلیف‌ها مثل ـفـ یا ـر از اندازه اصلی طولی گلیف تجاوز کرده‌اند؟</p>
+<p><a href="images/side-exceed.png"><img alt="پیشروی کناره" src="images/side-exceed.png" title="پیشروی کناره"></a>
+این پیشروی‌ها نواحی اتصال حروف به یکدیگر می‌باشند. دلیلش اطمینان از اینست که گلیف‌های متصل به هم به نوعی در یکدیگر فرو رفته‌اند. این مقدار حتما باید کم یا جزئی باشد.</p>
+<p>نکته: ضخامت خط پایه یا به عبارتی آن قسمتی که از گلیف که بر روی خط پایه قرار می گیرد حتما در همه حروف یکسان باشید.</p>
+<p>نکته: ضخامت خط پایه را بیشتر از سایر قسمت ها در نظر بگیرید. این عمل علاوه بر افزایش خوانایی به ثبات و خطی بودن شکل قلم نیز کمک فراوانی می‌کند.</p>
+<p><strong>سوال</strong>: چگونه با فونت فورج، قلم را با نام دلخواهم بسازم؟</p>
+<p>در منوی Element-&gt;Font Info ذیل برگه PS Names نام وزیر را یا نام دلخواه خود جایگزین کنید. در برگه OS/2 توجه داشته باشید که Weight Class آن بر روی عدد صحیح بسته به ضخامت فونت به درستی تعریف شده باشد. حالت معمولی همان 400 Regular می‌باشد. در برگه TTF Names علاوه بر جایگزینی وزیر با نام دلخواه خود، حتما Unique Id را به صورت منحصر به فرد یا یکتا تعریف کنید.
+پس از آن با انتخاب منوی File-&gt;Generate Fonts فایل فونت خود را با فرمت دلخواه تولید(ایجاد) نمایید.</p>
+<p><a href="images/font-info-ps-names.png"><img alt="اطلاعات فونت" src="images/font-info-ps-names.png" title="اطلاعات فونت"></a></p>
+<p><a href="images/font-info-weight-class.png"><img alt="اطلاعات فونت" src="images/font-info-weight-class.png" title="اطلاعات فونت"></a></p>
+<p><a href="images/font-info-ttf-names.png"><img alt="اطلاعات فونت" src="images/font-info-ttf-names.png" title="اطلاعات فونت"></a></p>
+<p><a href="images/generate-fonts-1.png"><img alt="ایجاد فونت" src="images/generate-fonts-1.png" title="ایجاد فونت"></a></p>
+<p><a href="images/generate-fonts-2.png"><img alt="ایجاد فونت" src="images/generate-fonts-2.png" title="ایجاد فونت"></a></p>
+<p><a href="images/generate-fonts-3.png"><img alt="ایجاد فونت" src="images/generate-fonts-3.png" title="ایجاد فونت"></a></p>
+<p><strong>سوال</strong>: چگونه همه گلیف‌های عربی را با هم انتخاب کنم؟</p>
+<p>با انتخاب منوی Edit-&gt;Select-&gt;Select By Script و پس از آن انتخاب Arabic.</p>
+<p><strong>سوال</strong>: چرا برخی گلیف ها تکرار شده‌اند؟</p>
+<p>دلیلش در تفاوت نوع کیبود در سیستم عامل‌ها یا سامانه‌های نوشتاری است. هر سامانه‌ای، از کد گلیف مورد نظر خود استفاده می‌کند. شما کافیست به شیوه کپی از طریق ارجاع دهی، خیال خود را از بابت یکسان بودن همه گلیف‌های تکراری راحت نمایید.</p>
+<p><strong>سوال</strong>: بحث کرنینگ Kerning در فونت‌فورج به چه صورت است؟</p>
+<p>در آینده اگر عمر و توانی بود توضیح می‌دهم.</p>
+<p><strong>سوال</strong>: hinting را چگونه انجام دهم؟</p>
+<p>راه اول: هر گلیفی را که می خواهید hinting بر روی آن انجام شود انتخاب نموده و سپس منوی Hints-&gt;AutoHint را برگزینید. سپس منوی Hints-&gt;AutIntrs. اکنون اطلاعات hinting به رنگ سبز و آبی در گلیف نمایش می‌یابند.</p>
+<p>راه دوم: که ساده تر است و شاید در مواردی بتوان گفت خروجی بهتری را می‌دهد استفاده از برنامه ttfautohint می‌باشد. آن را در وب جستجو کنید. کار کردن با آن بسیار ساده است.</p>
+<p><strong>سوال</strong>: چگونه در حین ویرایش گلیف‌ها خروجی کار خود را بر روی یک متن واقعی ببینم؟</p>
+<p>این فایل با فرمت html را دریافت و ذخیره نمایید. سپس با یک برنامه ویرایشگر فایل متنی یا html، واژه myfont را با نام فونت مورد نظر خود جایگزین نموده و ذخیره کنید. فایل فونت خود با پسوند woff یا ttf را در کنار این فایل html (همان پوشه) ذخیره و در نهایت فایل html را با یک ویرایشگر باز نمایید. هر بار که فایل فونت خود را generate یا تولید کردید این صفحه را مجددا ببینید (refresh).</p>
+<p><strong>سوال</strong>: چرا در گنو/لینوکس وقتی گلیفی را از فونت حذف کردم توی متن‌ها یا صفحات جای آن به صورت مربع نشان می‌دهد به جای آنکه از سایر فونت‌ها استفاده کند.</p>
+<p>این دستور را اجرا کنید:
+fc-cache -f -v</p>
+<h2>پیروز باشید</h2>
+<p>توسط صابر راستی کردار</p>
+<p>ایمیل: saber.rastikerdar بر روی جی‌میل</p>
+<p>آدرس گیت‌هاب: <a href="https://github.com/rastikerdar/getting-started-with-fontforge">getting-started-with-fontforge</a></p>
+<p>گفتگو پیرامون این صفحه در وبلاگ: <a href="http://rastikerdar.blog.ir/post/14">rastikerdar.blog.ir</a></p>
+<p>با تشکر و قدردانی از سازندگان برنامه <a href="https://fontforge.github.io">FontForge</a></p>
+<p>راهنمای اصلی فونت فورج: <a href="https://fontforge.github.io/en-US/documentation/">documentation</a></p>
+<p>مجوز این متن: GNU Free Documentation License</p>
+<p>نسخه ۰.۱</p>
+    </article>
+        
+<!--
+    <footer></footer>
+-->
+    
+    <script>
+      "use strict";
+            
+      function changeFont(name) {
+        var text = document.getElementsByClassName('text')[0];
+        text.className = text.className.replace(/(?:^|\s)font-[a-z]*(?!\S)/g , ' font-' + name);
+      }
+      
+      function changeSize(size) {
+        var text = document.getElementsByClassName('text')[0];
+        text.className = text.className.replace(/(?:^|\s)size-[0-9]*(?!\S)/g , ' size-' + size);
+      }
+      
+      function changeStyle(name) {
+        if (!name) return;
+        var html = document.getElementsByTagName('html')[0];
+        html.className = html.className.replace(/(?:^|\s)style-[a-z]*(?!\S)/g , ' style-' + name);
+      }
+      
+    </script>
+  </body>
+</html>
