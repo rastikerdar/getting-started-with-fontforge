@@ -383,4 +383,4 @@ fc-cache -f -v
 
 مجوز این متن و تصاویر: GNU Free Documentation License, CC-by-SA 3.0
 
-نسخه ۰.۱
+نسخه ۰.۲
