@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <meta name="description" content="آموزش آشنایی با برنامه فونت‌فورج">   
     <meta name="keywords" content="فونت,فارسی,فونت فورج,راهنما,آموزش,font,fontforge">
-    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@26.0.1/dist/font-face.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v32.102/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/font-face.css">
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v5.0.1/dist/font-face.css">
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/parastoo-font@v2.0.1/dist/font-face.css">
@@ -23,7 +23,7 @@
         color: #000;
         direction: rtl;
         line-height: 1.7;
-        font-family: vazir, Tahoma,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
+        font-family: vazirmatn, Tahoma,"DejaVu Sans",helvetica,arial,freesans,sans-serif;
         font-size: 14px;
       }
       
@@ -71,7 +71,7 @@
       }
 
       nav select {
-        font-family: vazir;
+        font-family: vazirmatn;
       }
             
       nav a { 
@@ -111,8 +111,8 @@
         font-family: tanha, tahoma, "DejaVu Sans", freesans,sans-serif;;
       }
 
-      .font-vazir {
-        font-family: vazir, tahoma, "DejaVu Sans", freesans,sans-serif;
+      .font-vazirmatn {
+        font-family: vazirmatn, tahoma, "DejaVu Sans", freesans,sans-serif;
       }      
 
       .font-sahel {
@@ -189,7 +189,7 @@
         <a href="#" onclick="window.scrollTo(0,0);"> ^ابتدا</a>
         <select autocomplete=off id="select-font" onchange="changeFont(this.value)">
           <option value="" selected disabled>نوع قلم</option>
-          <option value="vazir">وزیر</option>
+          <option value="vazirmatn">وزیر</option>
           <option value="sahel">ساحل</option>
           <option value="samim">صمیم</option>
           <option value="shabnam">شبنم</option>
@@ -221,12 +221,12 @@
     </header>
 -->
 
-    <article class="text font-vazir size-14">
+    <article class="text font-vazirmatn size-14">
       <h1>شروع با FontForge</h1>
 <p>مقدمه:
 برای طراحی قلم ابتدا باید با دانش طراحی قلم آشنا باشید. این دانش را می‌توانید در دوره‌های تخصصی یا رشته‌های دانشگاهی مرتبط تحت نظر اساتید مجرب تحصیل نمایید. هر تایپ‌فیس برای طراحی دست کم چند ماه زمان نیاز دارد که بسته به پیچیدگی می‌تواند تا چند سال هم به طول بینجامد. اکیدا توصیه می‌شود دانش و مهارت طراحی قلم را به صورت اصولی فرا بگیرید قبل از آنکه در این وادی شیرجه بزنید.</p>
 <p>این راهنمای کوتاه و سریع تنها گوشه‌ای از نحوه کار با نرم‌افزار فونت‌فورج را توضیح می‌دهد تا با نمای کلی آن آشنا شوید. در واقع پیش از آن شما باید مرحله نخست طراحی تایپ‌فیس یعنی اتود زدن بر روی کاغذ را درک کرده باشید و از آن تصاویر برای ایجاد اشکال دیجیتالی بهره بگیرید. این راهنما ممکن است دارای اشکالاتی هم باشد. همچنین نیاز است تا به انتها بخوانید. به ویژه قسمت پرسش و پاسخ.</p>
-<p><a href="https://fontforge.github.io">فونت‌فورج</a> را که نصب کردید به سراغ یکی از صفحات فونت های آزاد رفته و پس از دریافت فایل سورس، آن را توسط فونت‌فورج باز کنید. برای شروع شاید <a href="https://github.com/rastikerdar/vazir-font/raw/master/source/Vazir.sfd">قلم وزیر</a> بد نباشد.</p>
+<p><a href="https://fontforge.github.io">فونت‌فورج</a> را که نصب کردید به سراغ یکی از صفحات فونت های آزاد رفته و پس از دریافت فایل سورس، آن را توسط فونت‌فورج باز کنید. برای شروع شاید <a href="https://raw.githubusercontent.com/rastikerdar/vazirmatn/master/sources/Vazirmatn-Regular.sfd">قلم وزیرمتن</a> بد نباشد (لینک را دانلود یا ذخیره کنید).</p>
 <h2>نمای نخست</h2>
 <p><a href="images/main-window.png"><img alt="صفحه اصلی فونت‌فورج" src="images/main-window.png" title="صفحه اصلی فونت‌فورج"></a></p>
 <p>اجازه دهید مروری بر موضوعات کلی داشته باشیم. به طور خیلی ساده و کلی زمانی که کامپیوتر می خواهد چیزی را نمایش دهد ابتدا کد آن را بررسی می‌کند که آیا در این جدولی که مشاهده می کنید وجود دارد (و البته خالی نمی باشد) یا خیر. اگر خیر به سراغ جداول فونت های دیگری می رود. آرایش این جدول بر اساس نوع انکدینگی است که در منوی Encoding انتخاب کرده‌ایم:</p>
@@ -435,7 +435,7 @@ fc-cache -f -v</p>
 <p>با تشکر و قدردانی از سازندگان برنامه <a href="https://fontforge.github.io">FontForge</a></p>
 <p>راهنمای اصلی فونت فورج: <a href="https://fontforge.github.io/en-US/documentation/">documentation</a></p>
 <p>مجوز این متن و تصاویر: GNU Free Documentation License, CC-by-SA 3.0</p>
-<p>نسخه ۰.۲</p>
+<p>نسخه ۰.۲.۱</p>
     </article>
         
 <!--
